@@ -1,0 +1,9 @@
+body {
+    background-color: #000000;
+}
+
+#tela {
+    background-color: #000000;
+    border-style: solid;
+    border-color: #888888;
+}
