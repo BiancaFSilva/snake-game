@@ -81,7 +81,7 @@
 		interval = 190;
 	 	acDelta = 0;
 	 	lastUpdateTime = 0;
-	 	msPerFrame = arrTimer [interface.getLevel() - 1] [interface.getSpeed() - 1];
+	 	msPerFrame = arrTimer [interface.getLevel() + 1] [interface.getSpeed() + 1];
 
 	  	arrStatus = ["Começar","Jogando","Pausado","Vencedor","Game Over"]; // Statua de jogo
 
