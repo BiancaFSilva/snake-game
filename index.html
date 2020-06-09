@@ -1,18 +1,30 @@
-<!DOCTYPE html>
-    <html lang="pt-br">
-    <head>
-        <title>Snake</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link rel="stylesheet" type="text/css" href="estilo.css">
-    </head>
-    <body>
-        <canvas id="tela" width=640 height=480> Navegador não suportado! </canvas> <br>
-        <button id="btPausa" type="button" onclick="pausa()"> Iniciar </button>
-        <button id="btNovo" type="button" onclick="novoJogo()"> Novo jogo </button>
-
-        <!-- Scripts incorporados -->
-        <script src="js/nodo.js"></script>
-        <script src="js/script.js"></script>
-    </body>
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Snake Game </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="js/keyEvents.js"></script>
+		<script type="text/javascript" src="js/snake.js"></script>
+		<script type="text/javascript" src="js/square.js"></script>
+		<script type="text/javascript" src="js/interface.js"></script>
+	</head>
+	<body>
+		<div id="container">		
+			<div id="divMenu" width="120">
+				<p> Status : <span id="status"> </span> </p>
+				<p> Nível : <span id="level"> 1 </span> </p>
+				<p> Velocidade : <span id="speed"> 1 </span> </p>
+				<p> Pontos : <span id="score"> 0 </span>&nbsp; </p> 
+				<br>
+				<p> Aperte espaço para começar/pausar </p><br>			
+				<button id="restart"> Novo Jogo </button>
+			</div>
+			<div id="divCanvas">
+				<canvas id="canvas" width="640" height="480"></canvas>
+				<script type="text/javascript" src="js/main.js"></script>
+			</div>
+		</div>
+	</body>
 </html>
